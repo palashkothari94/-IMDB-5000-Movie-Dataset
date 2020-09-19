@@ -19,7 +19,7 @@ pacman::p_load(tidyverse,shiny, dplyr, tidyr, htmltools, plotly, shinyWidgets, l
 movie = read.csv("movie_metadata.csv")
 str(movie)
 sum(duplicated(movie))
-movie = movie[!duplicated(movie),]
+movie = movie[!duplicate....d(movie),]
 str(movie)
 colSums(sapply(movie, is.na))
 movie <- movie[!is.na(movie$gross), ]
